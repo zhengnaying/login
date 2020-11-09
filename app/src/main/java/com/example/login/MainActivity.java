@@ -20,7 +20,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button bt = (Button)findViewById(R.id.b1);
         bt.setOnClickListener(this);
         Button tip = (Button)findViewById(R.id.tip);
-        tip.setOnClickListener(this);
+        tip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder1 = new AlertDialog.Builder(MainActivity.this);
+                builder1.setTitle("提示对话框")
+                        .setMessage("提示！")
+                        .setPositiveButton("确认", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                            }
+                        });
+            }
+        });
     }
 
     @Override
