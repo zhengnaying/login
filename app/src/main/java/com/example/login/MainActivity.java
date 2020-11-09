@@ -31,7 +31,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             public void onClick(DialogInterface dialog, int which) {
 
                             }
-                        });
+                        })
+                        .create()
+                        .show();
+
             }
         });
     }
