@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         Button bt = (Button)findViewById(R.id.b1);
         bt.setOnClickListener(this);
+        Button tip = (Button)findViewById(R.id.tip);
     }
 
     @Override
